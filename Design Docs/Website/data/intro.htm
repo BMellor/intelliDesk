@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>body {background-color:white;}</style>
+</head>
+<body>
+	<div style="padding:20px;">
+		<h2>Introduction</h2>
+		
+		<p>The overall goal of this project is to design an intelligent LED lighting controller for use within a lab workspace. 
+		A central module will allow the user to interactively adjust the levels and state of each of the output lighting channels. 
+		In addition, the device will be capable of measuring various environmental conditions such as ambient light, room 
+		occupancy and temperature. An exploded view of the tentative design is shown below: </p>
+
+		<div class="right" style="padding-right:40px; padding-left:40px">	
+			<img src="media/exploded.png" height="300" alt="Exploded view of center module.">
+			<div class="imgCaption">Figure 1: Exploded view of center module. </div>
+		</div>
+		
+		<h4 style="padding-top:20px">Major functionality of the project:</h4>
+		<ol>
+			<li>6 independently controllable PWM output channels for MOSFET or current-source control/drive.</li>
+			<li>Allowing the user to interact with the system through capacitive-sensing buttons, OLED display and audible feedback.</li>
+			<li>Software interface to chain outputs as independent or RGB groupings.</li>
+			<li>Software interface to allow for selecting and dimming each output channel. (While keeping accurate color hue during RGB dimming.)</li>
+			<li>User-configurable behavior to automatically turn on/off lighting when entering/exiting the area during low ambient light levels. </li>
+			<li>Measuring and displaying environmental conditions such as temperature and barometric pressure trends.</li>
+		</ol>
+		
+		<h4 style="padding-top:20px">Functional Diagram:</h4>
+
+		<div class="left">	
+			<img src="media/functional.png" height="300" alt="Functional diagram.">
+			<div class="imgCaption">Figure 2: Functional diagram of system.</div>
+		</div>
+		
+		<table>
+			<tbody>
+				<tr>
+					<th>Inputs:</th>
+					<th>Outputs:</th>
+				</tr>
+				<tr>
+					<td>Capacitive-sensor ring</td>
+					<td>6 independently controlled PWM channels</td>
+				</tr>
+				<tr>
+					<td>CDS or similar (ambient light level)</td>
+					<td>OLED display</td>
+				</tr>
+				<tr>
+					<td>PIR (room occupancy)</td>
+					<td>Piezo speaker</td>
+				</tr>
+				<tr>
+					<td>Temperature</td>
+				</tr>
+				<tr>
+					<td>Barometric pressure</td>
+				</tr>
+			</tbody>
+		</table>
+		
+	</div>
+</body>
+</html>
