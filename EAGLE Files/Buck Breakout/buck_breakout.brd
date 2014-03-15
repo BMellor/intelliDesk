@@ -497,8 +497,8 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="23.975" y="36.24" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="U$2" library="intelliDesk" package="2X3_DFN" value="MCP1725" x="34.5626" y="25.25" smashed="yes" rot="R180"/>
-<element name="R5" library="chips" package="0402-S" value="1M" x="31.5016" y="24.5622" smashed="yes" rot="R180"/>
-<element name="R6" library="chips" package="0402-S" value="1M" x="31.4926" y="25.7852" smashed="yes"/>
+<element name="R5" library="chips" package="0402-S" value="1.1M" x="31.5016" y="24.5622" smashed="yes" rot="R180"/>
+<element name="R6" library="chips" package="0402-S" value="160k" x="31.4926" y="25.7852" smashed="yes"/>
 <element name="C8" library="chips" package="0603-CAP" value="1uF" x="29.5886" y="25.0124" smashed="yes" rot="R90"/>
 </elements>
 <signals>
@@ -579,13 +579,16 @@ Please make sure your boards conform to these design rules.</description>
 <via x="36.5" y="36.3126" extent="1-16" drill="0.3302"/>
 <via x="36.5" y="35.5" extent="1-16" drill="0.3302"/>
 <via x="36.5" y="34.6874" extent="1-16" drill="0.3302"/>
-<via x="26.5" y="37.5" extent="1-16" drill="0.3302"/>
-<via x="28" y="39" extent="1-16" drill="0.3302"/>
+<via x="28.5" y="39.25" extent="1-16" drill="0.3302"/>
+<via x="30.5" y="39.25" extent="1-16" drill="0.3302"/>
 <via x="40" y="38.75" extent="1-16" drill="0.3302"/>
 <via x="39.5" y="26.75" extent="1-16" drill="0.3302"/>
 <via x="36.75" y="23.25" extent="1-16" drill="0.3302"/>
 <via x="39.5" y="24" extent="1-16" drill="0.3302"/>
 <via x="25.75" y="24.5" extent="1-16" drill="0.3302"/>
+<via x="28.548" y="26.5424" extent="1-16" drill="0.3302"/>
+<via x="28.548" y="28.5424" extent="1-16" drill="0.3302"/>
+<via x="28.5" y="37.25" extent="1-16" drill="0.3302"/>
 </signal>
 <signal name="N$4">
 <contactref element="U$1" pad="7"/>

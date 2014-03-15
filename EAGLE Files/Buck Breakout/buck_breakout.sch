@@ -1860,8 +1860,8 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="JP1" library="SparkFun-Connectors" deviceset="M04" device="PTH"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="U$2" library="intelliDesk" deviceset="MCP1725" device=""/>
-<part name="R5" library="chips" deviceset="RESISTOR" device="0402-S" value="1M"/>
-<part name="R6" library="chips" deviceset="RESISTOR" device="0402-S" value="1M"/>
+<part name="R5" library="chips" deviceset="RESISTOR" device="0402-S" value="1.1M"/>
+<part name="R6" library="chips" deviceset="RESISTOR" device="0402-S" value="160k"/>
 <part name="C8" library="chips" deviceset="CAP" device="0603-CAP" value="1uF"/>
 </parts>
 <sheets>
