@@ -2740,9 +2740,9 @@ Uses SSD1306 Controller.
 <label x="96.52" y="167.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="6"/>
-<wire x1="149.86" y1="139.7" x2="154.94" y2="139.7" width="0.1524" layer="91"/>
-<label x="157.48" y="139.7" size="1.778" layer="95"/>
+<pinref part="JP2" gate="G$1" pin="9"/>
+<wire x1="149.86" y1="147.32" x2="154.94" y2="147.32" width="0.1524" layer="91"/>
+<label x="157.48" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -2752,9 +2752,9 @@ Uses SSD1306 Controller.
 <label x="96.52" y="165.1" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="5"/>
-<wire x1="149.86" y1="137.16" x2="154.94" y2="137.16" width="0.1524" layer="91"/>
-<label x="157.48" y="137.16" size="1.778" layer="95"/>
+<pinref part="JP2" gate="G$1" pin="8"/>
+<wire x1="149.86" y1="144.78" x2="154.94" y2="144.78" width="0.1524" layer="91"/>
+<label x="157.48" y="144.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="C/D#" class="0">
@@ -2776,9 +2776,9 @@ Uses SSD1306 Controller.
 <label x="96.52" y="147.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="8"/>
-<wire x1="149.86" y1="144.78" x2="154.94" y2="144.78" width="0.1524" layer="91"/>
-<label x="157.48" y="144.78" size="1.778" layer="95"/>
+<pinref part="JP2" gate="G$1" pin="6"/>
+<wire x1="149.86" y1="139.7" x2="154.94" y2="139.7" width="0.1524" layer="91"/>
+<label x="157.48" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -2788,9 +2788,9 @@ Uses SSD1306 Controller.
 <label x="96.52" y="144.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="9"/>
-<wire x1="149.86" y1="147.32" x2="154.94" y2="147.32" width="0.1524" layer="91"/>
-<label x="157.48" y="147.32" size="1.778" layer="95"/>
+<pinref part="JP2" gate="G$1" pin="5"/>
+<wire x1="149.86" y1="137.16" x2="154.94" y2="137.16" width="0.1524" layer="91"/>
+<label x="157.48" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWR_DN" class="0">
