@@ -717,6 +717,35 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <wire x1="0.254" y1="-0.254" x2="-0.254" y2="-0.254" width="0.127" layer="21"/>
 <wire x1="0.254" y1="0.127" x2="-0.254" y2="0.127" width="0.127" layer="21"/>
 </package>
+<package name="SOT23-3">
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-0.8" y1="0.7" x2="-1.4" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="0.7" x2="-1.4" y2="-0.1" width="0.2032" layer="21"/>
+<wire x1="0.8" y1="0.7" x2="1.4" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="0.7" x2="1.4" y2="-0.1" width="0.2032" layer="21"/>
+<smd name="3" x="0" y="1.1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<text x="-0.8255" y="1.778" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.016" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
+<package name="TO-92">
+<description>&lt;b&gt;TO 92&lt;/b&gt;</description>
+<wire x1="-2.0946" y1="-1.651" x2="-0.7863" y2="2.5485" width="0.2032" layer="21" curve="-111.098957" cap="flat"/>
+<wire x1="0.7863" y1="2.5484" x2="2.0945" y2="-1.651" width="0.2032" layer="21" curve="-111.09954" cap="flat"/>
+<wire x1="-2.0945" y1="-1.651" x2="2.0945" y2="-1.651" width="0.2032" layer="21"/>
+<wire x1="-2.6549" y1="-0.254" x2="-2.2537" y2="-0.254" width="0.2032" layer="21"/>
+<wire x1="-0.2863" y1="-0.254" x2="0.2863" y2="-0.254" width="0.2032" layer="21"/>
+<wire x1="2.2537" y1="-0.254" x2="2.6549" y2="-0.254" width="0.2032" layer="21"/>
+<pad name="3" x="1.27" y="0" drill="0.8128" diameter="1.8796"/>
+<pad name="2" x="0" y="1.905" drill="0.8128" diameter="1.8796"/>
+<pad name="1" x="-1.27" y="0" drill="0.8128" diameter="1.8796"/>
+<text x="3.175" y="0.635" size="0.4064" layer="25" ratio="10">&gt;NAME</text>
+<text x="3.175" y="-1.27" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CAP">
@@ -768,6 +797,47 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <vertex x="-2.921" y="-2.413"/>
 <vertex x="-2.413" y="-2.921"/>
 </polygon>
+</symbol>
+<symbol name="MOSFET-PCHANNEL">
+<wire x1="-3.6576" y1="2.413" x2="-3.6576" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="1.905" x2="-2.0066" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="-2.032" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="0" y1="1.905" x2="2.54" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.905" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="-0.762" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-0.762" x2="2.54" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-0.762" x2="3.175" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="3.175" y1="0.635" x2="1.905" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="0.635" x2="2.54" y2="-0.762" width="0.1524" layer="94"/>
+<wire x1="3.175" y1="-0.762" x2="2.54" y2="-0.762" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-0.762" x2="1.905" y2="-0.762" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="-0.762" x2="1.651" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="3.175" y1="-0.762" x2="3.429" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0.508" x2="-1.27" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-0.508" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.143" y1="0" x2="-2.032" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.143" y1="-0.254" x2="-0.254" y2="0" width="0.3048" layer="94"/>
+<wire x1="-0.254" y1="0" x2="-1.143" y2="0.254" width="0.3048" layer="94"/>
+<wire x1="-1.143" y1="0.254" x2="-1.143" y2="0" width="0.3048" layer="94"/>
+<wire x1="-1.143" y1="0" x2="-0.889" y2="0" width="0.3048" layer="94"/>
+<wire x1="-3.81" y1="0" x2="-5.08" y2="0" width="0.1524" layer="94"/>
+<circle x="0" y="-1.905" radius="0.127" width="0.4064" layer="94"/>
+<circle x="0" y="1.905" radius="0.127" width="0.4064" layer="94"/>
+<text x="5.08" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="0" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-1.27" y="2.54" size="0.8128" layer="93">D</text>
+<text x="-1.27" y="-3.556" size="0.8128" layer="93">S</text>
+<text x="-5.08" y="-1.27" size="0.8128" layer="93">G</text>
+<rectangle x1="-2.794" y1="-2.54" x2="-2.032" y2="-1.27" layer="94"/>
+<rectangle x1="-2.794" y1="1.27" x2="-2.032" y2="2.54" layer="94"/>
+<rectangle x1="-2.794" y1="-0.889" x2="-2.032" y2="0.889" layer="94"/>
+<pin name="G" x="-7.62" y="0" visible="off" length="short" direction="pas"/>
+<pin name="D" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="S" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1142,6 +1212,33 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOSFET-PCHANNEL" prefix="Q">
+<gates>
+<gate name="G$1" symbol="MOSFET-PCHANNEL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD" package="SOT23-3">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PTH" package="TO-92">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="2"/>
+<connect gate="G$1" pin="S" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2358,18 +2455,20 @@ Uses SSD1306 Controller.
 <part name="U$3" library="intelliDesk" deviceset="ER-OLED0.96-2" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="C7" library="chips" deviceset="CAP" device="0402-CAP" value="1uF"/>
-<part name="C9" library="chips" deviceset="CAP" device="0402-CAP" value="1uF"/>
-<part name="C10" library="chips" deviceset="CAP" device="0402-CAP" value="1uF"/>
-<part name="C11" library="chips" deviceset="CAP" device="0402-CAP" value="1uF"/>
-<part name="C12" library="chips" deviceset="CAP" device="0402-CAP" value="2.2uF"/>
-<part name="C13" library="chips" deviceset="CAP" device="0402-CAP" value="4.7uF"/>
-<part name="R7" library="chips" deviceset="RESISTOR" device="0402-RES" value="390K"/>
+<part name="C7" library="chips" deviceset="CAP" device="0402-S" value="1uF"/>
+<part name="C9" library="chips" deviceset="CAP" device="0402-S" value="1uF"/>
+<part name="C10" library="chips" deviceset="CAP" device="0402-S" value="1uF"/>
+<part name="C11" library="chips" deviceset="CAP" device="0402-S" value="1uF"/>
+<part name="C12" library="chips" deviceset="CAP" device="0402-S" value="2.2uF"/>
+<part name="C13" library="chips" deviceset="CAP" device="0402-S" value="4.7uF"/>
+<part name="R7" library="chips" deviceset="RESISTOR" device="0402-S" value="390K"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M09" device="LOCK"/>
 <part name="JP3" library="SparkFun-Connectors" deviceset="M02" device="LOCK"/>
+<part name="Q1" library="chips" deviceset="MOSFET-PCHANNEL" device="SMD"/>
+<part name="R8" library="chips" deviceset="RESISTOR" device="0402-S" value="100k"/>
 </parts>
 <sheets>
 <sheet>
@@ -2410,6 +2509,8 @@ Uses SSD1306 Controller.
 <instance part="GND7" gate="1" x="27.94" y="101.6"/>
 <instance part="JP2" gate="G$1" x="139.7" y="137.16"/>
 <instance part="JP3" gate="G$1" x="142.24" y="106.68"/>
+<instance part="Q1" gate="G$1" x="-2.54" y="132.08"/>
+<instance part="R8" gate="G$1" x="-17.78" y="137.16" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -2634,16 +2735,14 @@ Uses SSD1306 Controller.
 <label x="20.32" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="VBAT"/>
-<pinref part="C10" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="137.16" x2="35.56" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="137.16" x2="25.4" y2="137.16" width="0.1524" layer="91"/>
-<label x="17.78" y="137.16" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="JP2" gate="G$1" pin="3"/>
 <wire x1="149.86" y1="132.08" x2="154.94" y2="132.08" width="0.1524" layer="91"/>
 <label x="157.48" y="132.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="Q1" gate="G$1" pin="S"/>
+<wire x1="-2.54" y1="127" x2="-2.54" y2="119.38" width="0.1524" layer="91"/>
+<label x="-5.08" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -2680,6 +2779,11 @@ Uses SSD1306 Controller.
 <pinref part="JP2" gate="G$1" pin="2"/>
 <wire x1="149.86" y1="129.54" x2="154.94" y2="129.54" width="0.1524" layer="91"/>
 <label x="157.48" y="129.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="-17.78" y1="142.24" x2="-17.78" y2="147.32" width="0.1524" layer="91"/>
+<label x="-20.32" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -2798,6 +2902,22 @@ Uses SSD1306 Controller.
 <pinref part="JP2" gate="G$1" pin="4"/>
 <wire x1="149.86" y1="134.62" x2="154.94" y2="134.62" width="0.1524" layer="91"/>
 <label x="157.48" y="134.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="Q1" gate="G$1" pin="G"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="-10.16" y1="132.08" x2="-17.78" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="132.08" x2="-27.94" y2="132.08" width="0.1524" layer="91"/>
+<label x="-40.64" y="132.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="VBAT"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<wire x1="40.64" y1="137.16" x2="35.56" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="G$1" pin="D"/>
+<wire x1="-2.54" y1="137.16" x2="35.56" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
