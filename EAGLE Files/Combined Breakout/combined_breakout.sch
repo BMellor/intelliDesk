@@ -125,24 +125,6 @@
 <libraries>
 <library name="brent">
 <packages>
-<package name="DD10">
-<smd name="3" x="0" y="-1.425" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="2" x="-0.5" y="-1.425" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="1" x="-1" y="-1.425" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="4" x="0.5" y="-1.425" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="5" x="1" y="-1.425" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="8" x="0" y="1.425" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="9" x="-0.5" y="1.425" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="10" x="-1" y="1.425" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="7" x="0.5" y="1.425" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="6" x="1" y="1.425" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="EP\" x="0" y="0" dx="1.65" dy="2.38" layer="1" rot="R90"/>
-<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.1524" layer="21"/>
-<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.1524" layer="21"/>
-<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.1524" layer="51"/>
-<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.1524" layer="51"/>
-<circle x="-1" y="-2" radius="0.03" width="0.1524" layer="21"/>
-</package>
 <package name="NR6028T150M">
 <smd name="1" x="-2.35" y="0" dx="5.7" dy="1.6" layer="1" rot="R90"/>
 <smd name="2" x="2.35" y="0" dx="5.7" dy="1.6" layer="1" rot="R90"/>
@@ -155,23 +137,6 @@
 </package>
 </packages>
 <symbols>
-<symbol name="LT3990">
-<text x="-10.16" y="15.24" size="1.778" layer="95">&gt;Name</text>
-<text x="-10.16" y="-22.86" size="1.778" layer="96">&gt;Value</text>
-<wire x1="-12.7" y1="15.24" x2="-12.7" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-20.32" x2="12.7" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-20.32" x2="12.7" y2="15.24" width="0.254" layer="94"/>
-<wire x1="12.7" y1="15.24" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
-<pin name="VIN" x="-17.78" y="12.7" length="middle"/>
-<pin name="EN/UVLO" x="-17.78" y="5.08" length="middle"/>
-<pin name="PG" x="-17.78" y="-2.54" length="middle"/>
-<pin name="RT" x="-17.78" y="-10.16" length="middle"/>
-<pin name="BOOST" x="17.78" y="12.7" length="middle" rot="R180"/>
-<pin name="SW" x="17.78" y="5.08" length="middle" rot="R180"/>
-<pin name="BD" x="17.78" y="-2.54" length="middle" rot="R180"/>
-<pin name="FB" x="17.78" y="-10.16" length="middle" rot="R180"/>
-<pin name="GND" x="-17.78" y="-17.78" length="middle"/>
-</symbol>
 <symbol name="INDUCTOR">
 <wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94" curve="-180"/>
 <wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94" curve="-180"/>
@@ -184,29 +149,6 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LM3990">
-<gates>
-<gate name="G$1" symbol="LT3990" x="0" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="DD10">
-<connects>
-<connect gate="G$1" pin="BD" pad="8"/>
-<connect gate="G$1" pin="BOOST" pad="7"/>
-<connect gate="G$1" pin="EN/UVLO" pad="2"/>
-<connect gate="G$1" pin="FB" pad="1"/>
-<connect gate="G$1" pin="GND" pad="4 5 EP\"/>
-<connect gate="G$1" pin="PG" pad="9"/>
-<connect gate="G$1" pin="RT" pad="10"/>
-<connect gate="G$1" pin="SW" pad="6"/>
-<connect gate="G$1" pin="VIN" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="NR6028T150M">
 <gates>
 <gate name="G$1" symbol="INDUCTOR" x="63.5" y="0"/>
@@ -2304,6 +2246,31 @@ Standard 9-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <text x="-1.92" y="9.745" size="1.27" layer="25" font="vector">&gt;Name</text>
 <text x="-1.92" y="-8.035" size="1.27" layer="27" font="vector">&gt;Value</text>
 </package>
+<package name="DD10">
+<smd name="3" x="0" y="-1.425" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="2" x="-0.5" y="-1.425" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="1" x="-1" y="-1.425" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="4" x="0.5" y="-1.425" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="5" x="1" y="-1.425" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="8" x="0" y="1.425" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="9" x="-0.5" y="1.425" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="10" x="-1" y="1.425" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="7" x="0.5" y="1.425" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="6" x="1" y="1.425" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="EP\" x="0" y="0" dx="1.65" dy="2.38" layer="1" rot="R90"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.1524" layer="21"/>
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.1524" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.1524" layer="51"/>
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.1524" layer="51"/>
+<text x="3" y="-2" size="1.016" layer="27" font="vector" ratio="15" rot="R90">&gt;Value</text>
+<text x="-2" y="-2" size="1.016" layer="25" font="vector" ratio="15" rot="R90">&gt;Name</text>
+<wire x1="-1.3716" y1="-0.9398" x2="-1.27" y2="-0.9398" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-0.9398" x2="-1.27" y2="-1.524" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.524" x2="-1.4986" y2="-1.524" width="0.127" layer="21"/>
+<wire x1="-1.4986" y1="-1.524" x2="-1.4986" y2="-0.9398" width="0.127" layer="21"/>
+<wire x1="-1.4986" y1="-0.9398" x2="-1.3716" y2="-0.9398" width="0.127" layer="21"/>
+<wire x1="-1.3716" y1="-0.9398" x2="-1.3716" y2="-1.4732" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MCP1725">
@@ -2357,6 +2324,23 @@ Uses SSD1306 Controller.
 <pin name="VCC" x="20.32" y="-25.4" length="middle" direction="pwr" rot="R180"/>
 <pin name="VLSS" x="20.32" y="-33.02" length="middle" direction="pwr" rot="R180"/>
 <text x="-5.08" y="-2.54" size="1.778" layer="94">SSD1306</text>
+</symbol>
+<symbol name="LT3990">
+<text x="-10.16" y="15.24" size="1.778" layer="95">&gt;Name</text>
+<text x="-10.16" y="-22.86" size="1.778" layer="96">&gt;Value</text>
+<wire x1="-12.7" y1="15.24" x2="-12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-20.32" x2="12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-20.32" x2="12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="15.24" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
+<pin name="VIN" x="-17.78" y="12.7" length="middle"/>
+<pin name="EN/UVLO" x="-17.78" y="5.08" length="middle"/>
+<pin name="PG" x="-17.78" y="-2.54" length="middle"/>
+<pin name="RT" x="-17.78" y="-10.16" length="middle"/>
+<pin name="BOOST" x="17.78" y="12.7" length="middle" rot="R180"/>
+<pin name="SW" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="BD" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="FB" x="17.78" y="-10.16" length="middle" rot="R180"/>
+<pin name="GND" x="-17.78" y="-17.78" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2422,6 +2406,29 @@ Uses SSD1306 Controller.
 </device>
 </devices>
 </deviceset>
+<deviceset name="LM3990">
+<gates>
+<gate name="G$1" symbol="LT3990" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="DD10">
+<connects>
+<connect gate="G$1" pin="BD" pad="8"/>
+<connect gate="G$1" pin="BOOST" pad="7"/>
+<connect gate="G$1" pin="EN/UVLO" pad="2"/>
+<connect gate="G$1" pin="FB" pad="1"/>
+<connect gate="G$1" pin="GND" pad="4 5 EP\"/>
+<connect gate="G$1" pin="PG" pad="9"/>
+<connect gate="G$1" pin="RT" pad="10"/>
+<connect gate="G$1" pin="SW" pad="6"/>
+<connect gate="G$1" pin="VIN" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -2434,7 +2441,7 @@ Uses SSD1306 Controller.
 </class>
 </classes>
 <parts>
-<part name="U$1" library="brent" deviceset="LM3990" device=""/>
+<part name="U$1" library="intelliDesk" deviceset="LM3990" device=""/>
 <part name="L1" library="brent" deviceset="NR6028T150M" device="" value="15uH"/>
 <part name="C1" library="chips" deviceset="CAP" device="0603-CAP" value="100nF"/>
 <part name="C2" library="chips" deviceset="CAP" device="1206" value="2.2uF"/>
